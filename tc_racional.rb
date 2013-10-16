@@ -4,8 +4,7 @@ require "./racional.rb"
 require "test/unit"
 
 class Test_Fraccion < Test::Unit::TestCase
-  describe racional.rb do
-    it "Debe existir la clase"
+  def test_initialize
     @r1 = Fraccion.new(1, 2)
   end
 end

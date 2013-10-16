@@ -27,4 +27,9 @@ class Test_Fraccion < Test::Unit::TestCase
     assert_equal("0/4", rr.to_s)
   end
   
+  def test_mult
+    rr = @r1 * @r2
+    assert_equal("4/6", rr.to_s)
+  end
+  
 end

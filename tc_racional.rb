@@ -16,10 +16,10 @@ class Test_Fraccion < Test::Unit::TestCase
     assert_equal("1/2", @r1.to_s)
   end
   
-  def sum
+  def test_sum
     rr = @r1 + @r1
     #rr = @r1.sum (@r1)
-    assert_equal("2/4", rr.to_s)
+    assert_equal("4/4", rr.to_s)
   end
   
 end

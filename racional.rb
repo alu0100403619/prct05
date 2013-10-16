@@ -14,15 +14,15 @@ class Fraccion
   end
   
   def +(other)
-    num = (@num * other.den) + (@den * other.num)
-    den = @den * other.den
+    den = gcd(@den, other.den)
+    num = ((@den/den) * @num) + ((other.den/den) * other.num)
     sum = Fraccion.new(num, den)
     sum
   end
   
   def -(other)
-    num = (@num * other.den) - (@den * other.num)
-    den = @den * other.den
+    den = gcd(@den, other.den)
+    num = ((@den/den) * @num) - ((other.den/den) * other.num)
     rest = Fraccion.new(num, den)
     rest
   end

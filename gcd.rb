@@ -8,4 +8,4 @@ def gcd(u, v) #Se Descompone y se cojen los comunes al menor exponente
   u
 end
 
-#puts gcd(6,3)
+#puts gcd(5,10)

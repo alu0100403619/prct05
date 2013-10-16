@@ -19,12 +19,12 @@ class Test_Fraccion < Test::Unit::TestCase
   def test_sum
     rr = @r1 + @r1
     #rr = @r1.sum (@r1)
-    assert_equal("4/4", rr.to_s)
+    assert_equal("2/2", rr.to_s)
   end
   
   def test_resta
     rr = @r1 - @r1
-    assert_equal("0/4", rr.to_s)
+    assert_equal("0/2", rr.to_s)
   end
   
   def test_mult

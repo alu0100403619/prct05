@@ -33,7 +33,7 @@ class Test_Fraccion < Test::Unit::TestCase
   end
   
   def test_div
-    rr = @r1 / @r2
+    rr = @r1.div(@r2)
     assert_equal("4/6", rr.to_s)
   end
   

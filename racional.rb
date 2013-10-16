@@ -34,6 +34,13 @@ class Fraccion
     mult
   end
   
+  def div(other)
+    num = @num * other.den
+    den = @den * other.num
+    div = Fraccion.new(num, den)
+    div
+  end
+  
 end
 
 #r1 = Fraccion.new(1, 2)

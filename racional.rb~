@@ -28,10 +28,17 @@ class Fraccion
   end
   
   def *(other)
-    num = @num * other.den
+    num = @num * other.num
     den = @den * other.den
     mult = Fraccion.new(num, den)
     mult
+  end
+  
+  def div(other)
+    num = d
+    den = d
+    div = Fraccion.new(num, den)
+    div
   end
   
 end

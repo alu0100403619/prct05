@@ -34,7 +34,7 @@ class Test_Fraccion < Test::Unit::TestCase
   
   def test_div
     rr = @r1.div(@r2)
-    assert_equal("4/6", rr.to_s)
+    assert_equal("2/3", rr.to_s)
   end
   
 end

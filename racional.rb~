@@ -30,14 +30,17 @@ class Fraccion
   def *(other)
     num = @num * other.num
     den = @den * other.den
-    mult = Fraccion.new(num, den)
+    gcd = gcd(@den, other.den)
+    puts gcd
+    mult = Fraccion.new(num/gcd, den/gcd)
     mult
   end
   
   def div(other)
     num = @num * other.den
     den = @den * other.num
-    div = Fraccion.new(num, den)
+    gcd = gcd(@den, other.den)
+    div = Fraccion.new(num/gcd, den/gcd)
     div
   end
   
